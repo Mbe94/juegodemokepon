@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@300&display=swap');
+
+
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FF6C22;
+}
+
+#seleccionar-mascota 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo 
+{
+    color: white;
+    font-size: 33px;
+}
+
+.subtitulo
+{
+    color: white;
+    font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataques
+{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta_de_mokepon
+{
+    width: 160px;
+    height: 100px;
+    background: #FFD099;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #FF9209;
+}
+
+.tarjeta_de_mokepon img
+{
+    width: 80px;
+}
+
+#boton-mascota
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background: #FF6C22;
+    border: 1px solid #FFD09B;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
+
+input 
+{
+    display: none;
+}
+
+input:checked + label
+{
+    background-color: white;
+}
+
+#seleccionar-ataque
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque
+{
+    background-color: #FF9209;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mensajes
+{
+    width: 180px;
+    background: #FF9209;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#boton-reiniciar
+{
+    border: none;
+    color: #FF9209;   
+}
+
+.ataques
+{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+#vidas-jugador, #vidas-enemigo
+{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px)
+{
+    .tarjetas, .tarjetas-ataques 
+    {
+        flex-direction: column;
+    }
+}
