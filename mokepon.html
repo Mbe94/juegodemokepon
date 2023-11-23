@@ -3,8 +3,7 @@
 <html>
     <head>
         <Meta charset = "utf-8" />
-        <title>Mokepon</title>
-        <script src="./js/newFile.js"></script>
+        <title>Mokepon</title>        
         <link rel="stylesheet" href="./styles.css">
     </head>
         <body>
@@ -12,32 +11,8 @@
                 <h1 class="titulo">Mokepon</h1> 
                 <h2 class="subtitulo">Elige tu mascota:</h2>
                     
-                <div class="tarjetas">
-
-                    <input type="radio" name="mascota" id="hipoge"/>
-                    <label class = "tarjeta_de_mokepon" for="hipoge">
-                        <p>
-                            Hipoge
-                        </p>
-                        <img src="./ASSETS/hipoge.png" alt="hipoge">
-                    </label>
-                    
-                    <input type="radio" name="mascota" id="capipeyo"/>
-                    <label class = "tarjeta_de_mokepon" for="capipeyo">
-                        <p>
-                            Capipeyo
-                        </p>
-                        <img src="./ASSETS/capipeyo.png" alt="capipeyo">
-                    </label>
-                    
-                    <input type="radio" name="mascota" id="ratigueya"/>
-                    <label class = "tarjeta_de_mokepon" for="ratigueya">
-                        <p>
-                            Ratigueya
-                        </p>
-                        <img src="./ASSETS/ratigueya.png" alt="ratigueya">
-                    </label>
-                                                            
+                <div id='contenedorTarjetas'class="tarjetas">
+                                                                                
                 </div>
 
                 <button id="boton-mascota">Seleccionar</button>
@@ -48,11 +23,7 @@
                 
                 <h2 class="subtitulo">Elige tu ataque:</h2>  
                 
-                <div class="tarjetas-ataques">
-                    <button id="boton-fuego" class="boton-de-ataque"> fuego🔥 </button>
-                    <button id="boton-agua" class="boton-de-ataque"> agua 💧</button>
-                    <button id="boton-tierra" class="boton-de-ataque"> tierra 🏔️</button>
-                </div>
+                <div id="contenedorAtaques" class="tarjetas-ataques"></div>
                 
                 <div id="mensajes">
                     <p id="resultado">Mucha suerte</p>
@@ -65,16 +36,17 @@
 
                 <div class = "ataques">
                     <div class = "ataques-jugador">
-                        <p id="vidas-jugador">3</p>
+                        <p id="vidas-jugador">0</p>
                         <p id="mascota-jugador"></p>
                         <div id="ataquesDelJugador"></div>
                     </div>
                     <div class = "ataques-enemigo">
-                        <p id="vidas-enemigo">3</p>
+                        <p id="vidas-enemigo">0</p>
                         <p id="mascota-enemigo"></p>
                         <div id="ataquesDelEnemigo"></div>
                     </div>                                                                      
                 </div>                
-            </section>          
+            </section>     
+            <script src="./js/newFile.js"></script>     
         </body>
 </html>
